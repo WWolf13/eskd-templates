@@ -719,7 +719,6 @@ class Schematic():
                         self.approver = item.getText("value")
                     elif item.getText("number") == "6":
                         self.inspector = item.getText("value")
-
         for comp in netlist.items("comp"):
             component = Component(self)
             component.reference = comp.getText("ref")
